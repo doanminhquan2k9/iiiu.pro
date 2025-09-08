@@ -1,82 +1,36 @@
-<!-- 
-   README.md — LichSV Futuristic Landing Page
-   Phong cách: Cyberpunk / Robotic / Futuristic
-   Tác giả: quanit206
--->
+# LichSV — Trang tải ứng dụng (Landing Page)
 
-<div align="center">
+[![Status](https://img.shields.io/badge/status-stable-10b981)](#)
+[![Version](https://img.shields.io/badge/version-1.1.7-0ea5e9)](#)
+[![Built with](https://img.shields.io/badge/Bootstrap-5.3.3-7952b3)](#)
+[![License](https://img.shields.io/badge/license-MIT-000)](#license)
+[![For Students](https://img.shields.io/badge/for-students-2563eb)](#)
 
-# 🤖✨ LichSV — Landing Page Sinh Viên 4.0 ✨🤖
-
-<img src="./assets/future-banner.gif" alt="Futuristic Banner" width="100%"/>
-
-[![Trạng thái](https://img.shields.io/badge/status-ONLINE-10b981?style=for-the-badge&logo=vercel&logoColor=white)](#)
-[![Phiên bản](https://img.shields.io/badge/version-1.1.7-0ea5e9?style=for-the-badge&logo=github)](#)
-[![Xây dựng bằng](https://img.shields.io/badge/Bootstrap-5.3.3-7952b3?style=for-the-badge&logo=bootstrap)](#)
-[![Giấy phép](https://img.shields.io/badge/license-MIT-111827?style=for-the-badge)](#license)
-[![Made for Students](https://img.shields.io/badge/for-students-2563eb?style=for-the-badge&logo=graduation-cap)](#)
-
-⚡ *Landing page tải ứng dụng LichSV với thiết kế neon-glass, hiệu ứng chuyển động và phong cách robot tương lai.* ⚡
-
-</div>
+> **LichSV** là landing page tải app lịch học dành cho sinh viên các trường đại học tại Việt Nam.  
+> Siêu nhẹ, responsive, hỗ trợ dark mode, tìm kiếm trường theo *tên/ký hiệu*, kèm liên kết Telegram & Facebook group.
 
 ---
 
-# 🧬 Giới thiệu
+## ✨ Tính năng
 
-**LichSV** không chỉ là một landing page thông thường. Nó được thiết kế để:  
-
-- Hiện đại, sống động với **glassmorphism** và **gradient neon**  
-- Có **chuyển động dạng robot**: hover bay lên, chip phát sáng, tooltip mượt  
-- Hỗ trợ **dark mode tự động**  
-- Chạy **siêu nhanh** (thuần HTML/CSS/JS, không backend)  
-- Tối ưu cho **sinh viên**: tải app, tìm trường, tham gia cộng đồng  
-
----
-
-# ✨ Tính năng nổi bật
-
-## 🔎 Tìm kiếm tức thì
-- Nhập ký hiệu hoặc tên trường (ví dụ: `ICTU`, `FTU`)  
-- Lọc kết quả **theo thời gian thực**  
-- Badge hiển thị số trường khớp  
-
-## 🌗 Dark Mode
-- Tự động nhận diện theme hệ thống  
-- Nút toggle với icon moon/sun đổi mượt  
-- Lưu trạng thái trong `localStorage`  
-
-## 🧊 Giao diện Glass + Neon
-- Nền gradient + blob động  
-- Card có hiệu ứng **mờ ảo** (blur 10px)  
-- Viền bo mềm 18px, shadow nổi  
-
-## 🧭 Liên kết nhanh
-- **Android**: tải `.apk` trực tiếp  
-- **iOS**: App Store  
-- **Cộng đồng**: Telegram, Facebook Group, LMS ICTU  
-
-## ⚡ Hiệu ứng Robot
-- Hover → card bay lên `translateY(-2px)`  
-- Tooltip xuất hiện êm ái  
-- Nút nhấn → rung nhẹ, phát sáng như LED  
+- 🔍 **Tìm kiếm nhanh** theo tên hoặc ký hiệu (ICTU, FTU, …)
+- 🌗 **Dark/Light mode** tự động & có toggle, lưu trong LocalStorage
+- ⚡ **Siêu nhẹ, không backend** — HTML/CSS/JS thuần + CDN
+- 🧩 **UI Glassmorphism** + gradient blob
+- 🧭 **Liên kết nhanh**: Android/iOS, LMS ICTU, Telegram, Facebook
+- 🖼️ **Lưới logo** + tooltip, fallback khi lỗi ảnh
+- ♿ **A11y/SEO**: meta, aria-label, focus ring, tooltip Bootstrap
 
 ---
 
-# 🎥 Motion Spec (Mô tả chuyển động)
+## 🔗 Liên kết
 
-```css
-/* Hover card */
-.logo-item:hover {
-  transform: translateY(-2px) scale(1.01);
-  box-shadow: 0 8px 18px rgba(2,8,23,.25);
-  transition: all .18s cubic-bezier(.4,.0,.2,1);
-}
+- **Android APK:** `https://lichhoc.id.vn/Lichsv.apk`  
+- **iOS (App Store):** `https://apps.apple.com/vn/app/svpro/id6749335407?l=vi`  
+- **Xem điểm LMS ICTU:** `https://ictu.io.vn/`  
+- **Telegram:** `https://t.me/lmsictu_news`  
+- **Facebook Group:** `https://www.facebook.com/share/g/1Au7c3AiM2/`
 
-/* Nút toggle dark mode */
-.mode-btn {
-  transition: background .12s ease, transform .12s ease;
-}
-.mode-btn:active {
-  transform: scale(.95);
-}
+---
+
+
