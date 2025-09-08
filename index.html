@@ -70,19 +70,14 @@
       75%{ transform: scale(1.06); }
     }
 
-    .hero{
-      padding: 28px 22px;
-    }
+    .hero{ padding: 28px 22px; }
     .hero h1{
       font-size: clamp(20px, 4vw, 28px);
       margin: 0 0 8px 0;
       font-weight: 800;
       letter-spacing:.2px;
     }
-    .sub{
-      color:#475569;
-      margin:0;
-    }
+    .sub{ color:#475569; margin:0; }
     .dark .sub{ color:#cbd5e1; }
 
     .version-chip{
@@ -105,6 +100,18 @@
       transform: translateY(-1px);
       box-shadow: 0 10px 24px rgba(14,165,233,.25);
     }
+
+    /* Pills dưới nút tải */
+    .quick-links{ display:flex; flex-wrap:wrap; gap:10px; margin-top:6px; }
+    .pill{
+      display:inline-flex; align-items:center; gap:.5rem;
+      padding:8px 12px; border-radius:999px; font-weight:600; font-size:14px;
+      border:1px solid rgba(2,8,23,.08); background:#ffffff; color:#0f172a;
+      text-decoration:none;
+    }
+    .pill:hover{ background:#f8fafc; }
+    .dark .pill{ background:#0b1220; color:#e5e7eb; border-color:rgba(255,255,255,.08); }
+    .dark .pill:hover{ background:#111827; }
 
     .logos-toolbar{
       display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;
@@ -151,9 +158,7 @@
       display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
     }
     .dark .logo-name{ color:#e5e7eb; }
-    .logo-code{
-      font-size: 12px; color:#64748b;
-    }
+    .logo-code{ font-size: 12px; color:#64748b; }
     .dark .logo-code{ color:#94a3b8; }
 
     .divider{ border-color: rgba(2,8,23,.08) !important; }
@@ -166,7 +171,7 @@
     }
     .dark .mode-btn{ background:#0b1220; border-color: rgba(255,255,255,.08); color:#e5e7eb; }
 
-    a.btn:focus-visible, button:focus-visible, input:focus-visible{
+    a.btn:focus-visible, button:focus-visible, input:focus-visible, a.pill:focus-visible{
       outline: 3px solid #93c5fd !important;
       outline-offset: 2px;
     }
@@ -202,10 +207,23 @@
           <a class="btn btn-primary btn-download" href="https://lichhoc.id.vn/Lichsv.apk" aria-label="Tải LichSV cho Android">
             <i class="fa-brands fa-android me-2"></i> Tải xuống Android
           </a>
-          <a class="btn btn-dark btn-download" href="https://apps.apple.com/vn/app/svpro/id6749335407?l=vi" aria-label="Tải LichSV cho iOS">
+          <a class="btn btn-dark btn-download" href="https://apps.apple.com/vn/app/svpro/id6749335407?l=vi" aria-label="Tải LichSV cho iOS" target="_blank" rel="noopener">
             <i class="fa-brands fa-apple me-2"></i> Tải xuống iOS
           </a>
         </div>
+      </div>
+
+      <!-- Quick links: ICTU, Telegram & Facebook group -->
+      <div class="quick-links">
+        <a class="pill" href="https://ictu.io.vn/" target="_blank" rel="noopener" aria-label="Mở website xem điểm LMS ICTU">
+          <i class="fa-solid fa-graduation-cap"></i> Xem điểm LMS ICTU
+        </a>
+        <a class="pill" href="https://t.me/lmsictu_news" target="_blank" rel="noopener" aria-label="Tham gia cộng đồng Telegram LMS ICTU">
+          <i class="fa-brands fa-telegram"></i> Cộng đồng Telegram
+        </a>
+        <a class="pill" href="https://www.facebook.com/share/g/1Au7c3AiM2/" target="_blank" rel="noopener" aria-label="Tham gia nhóm Facebook LichSV">
+          <i class="fa-brands fa-facebook"></i> Nhóm Facebook
+        </a>
       </div>
     </section>
 
@@ -235,6 +253,17 @@
 
     <div class="text-center mt-4">
       <p class="mb-1">&copy; 2025 • Powered by <strong>quanit206</strong></p>
+      <div class="quick-links justify-content-center">
+        <a class="pill" href="https://ictu.io.vn/" target="_blank" rel="noopener" aria-label="Mở website xem điểm LMS ICTU ở chân trang">
+          <i class="fa-solid fa-graduation-cap"></i> Xem điểm LMS ICTU
+        </a>
+        <a class="pill" href="https://t.me/lmsictu_news" target="_blank" rel="noopener" aria-label="Cộng đồng Telegram LMS ICTU ở chân trang">
+          <i class="fa-brands fa-telegram"></i> Telegram: @lmsictu_news
+        </a>
+        <a class="pill" href="https://www.facebook.com/share/g/1Au7c3AiM2/" target="_blank" rel="noopener" aria-label="Nhóm Facebook LichSV ở chân trang">
+          <i class="fa-brands fa-facebook"></i> Nhóm Facebook
+        </a>
+      </div>
     </div>
   </div>
 
