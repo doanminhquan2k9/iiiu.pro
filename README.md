@@ -1,45 +1,55 @@
-# LichSV — Trang tải ứng dụng (Landing Page)
+<!--
+   LichSV — Futurist/Robotic README
+   Tone: neon / glass / circuits / motion-first
+-->
 
-[![Status](https://img.shields.io/badge/status-stable-10b981)](#)
-[![Version](https://img.shields.io/badge/version-1.1.7-0ea5e9)](#)
-[![Built with](https://img.shields.io/badge/Bootstrap-5.3.3-7952b3)](#)
-[![License](https://img.shields.io/badge/license-MIT-000)](#license)
-[![For Students](https://img.shields.io/badge/for-students-2563eb)](#)
+<div align="center">
 
-> **LichSV** là landing page tải app lịch học dành cho sinh viên các trường đại học tại Việt Nam.  
-> Siêu nhẹ, responsive, hỗ trợ dark mode, tìm kiếm trường theo *tên/ký hiệu*, kèm liên kết Telegram & Facebook group.
+<img src="./assets/hero-motion.gif" alt="LichSV Futuristic Motion" width="960"/>
 
----
+# 🤖 LichSV • Future Landing
 
-## ✨ Tính năng
+[![Status](https://img.shields.io/badge/status-ONLINE-10b981?style=for-the-badge)](#)
+[![Version](https://img.shields.io/badge/1.1.7-0ea5e9?style=for-the-badge&label=version)](#)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.3-7952b3?style=for-the-badge)](#)
+[![A11y](https://img.shields.io/badge/A11y-AA-22c55e?style=for-the-badge)](#)
+[![License](https://img.shields.io/badge/MIT-111827?style=for-the-badge)](#license)
 
-- 🔍 **Tìm kiếm nhanh** theo tên hoặc ký hiệu (ICTU, FTU, …)
-- 🌗 **Dark/Light mode** tự động & có toggle, lưu trong LocalStorage
-- ⚡ **Siêu nhẹ, không backend** — HTML/CSS/JS thuần + CDN
-- 🧩 **UI Glassmorphism** + gradient blob
-- 🧭 **Liên kết nhanh**: Android/iOS, LMS ICTU, Telegram, Facebook
-- 🖼️ **Lưới logo** + tooltip, fallback khi lỗi ảnh
-- ♿ **A11y/SEO**: meta, aria-label, focus ring, tooltip Bootstrap
+*Neon glass • micro-interactions • dark-by-design • zero-backend*
+
+</div>
 
 ---
 
-## 🔗 Liên kết
+## 🧬 DNA
+**LichSV** là landing page tải app lịch học cho sinh viên Việt Nam, thiết kế theo ngôn ngữ **neon-glass** và **robotic motion**.  
+Tập trung: **nhanh**, **mượt**, **tương lai** — chạy thuần HTML/CSS/JS + CDN.
 
-- **Android APK:** `https://lichhoc.id.vn/Lichsv.apk`  
-- **iOS (App Store):** `https://apps.apple.com/vn/app/svpro/id6749335407?l=vi`  
-- **Xem điểm LMS ICTU:** `https://ictu.io.vn/`  
-- **Telegram:** `https://t.me/lmsictu_news`  
-- **Facebook Group:** `https://www.facebook.com/share/g/1Au7c3AiM2/`
+> **Motion-first**: hover nâng bề mặt (elevation), chip version phát sáng, toggle dark/light mượt 120ms, tooltip mềm 180ms.
 
 ---
 
-## 📸 Preview
+## ⚙️ Tính năng (Core Systems)
 
-> Thêm ảnh chụp màn hình vào `assets/preview.png` rồi bỏ comment dưới:
-
-<!-- ![Preview](./assets/preview.png) -->
+- 🔎 **Instant Search**: lọc theo tên/ký hiệu (ICTU, FTU…) với debounce 120ms  
+- 🌗 **Dark Engine**: auto theo `prefers-color-scheme` + toggle, nhớ LocalStorage  
+- 🧊 **Glass UI**: blur 10px + viền mờ + shadow động (easing cubic-bezier)  
+- 🧭 **Quick Actions**: Android / iOS / LMS / Telegram / Facebook  
+- 🧰 **Resilient Logos**: lazy-load, tooltip, *graceful* khi lỗi ảnh  
+- ♿ **Accessible**: aria-labels, focus ring, key nav thân thiện
 
 ---
 
-## 🧱 Cấu trúc
+## 🚀 60s Quick-Start
 
+```sh
+# Clone
+git clone https://github.com/<your-org>/lichsv-landing.git
+cd lichsv-landing
+
+# Dev preview (1 trong 2)
+python -m http.server 8080
+# hoặc VS Code → Live Server
+
+# Open
+# http://localhost:8080
