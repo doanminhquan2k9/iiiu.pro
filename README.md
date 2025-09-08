@@ -1,55 +1,82 @@
-<!--
-   LichSV — Futurist/Robotic README
-   Tone: neon / glass / circuits / motion-first
+<!-- 
+   README.md — LichSV Futuristic Landing Page
+   Phong cách: Cyberpunk / Robotic / Futuristic
+   Tác giả: quanit206
 -->
 
 <div align="center">
 
-<img src="./assets/hero-motion.gif" alt="LichSV Futuristic Motion" width="960"/>
+# 🤖✨ LichSV — Landing Page Sinh Viên 4.0 ✨🤖
 
-# 🤖 LichSV • Future Landing
+<img src="./assets/future-banner.gif" alt="Futuristic Banner" width="100%"/>
 
-[![Status](https://img.shields.io/badge/status-ONLINE-10b981?style=for-the-badge)](#)
-[![Version](https://img.shields.io/badge/1.1.7-0ea5e9?style=for-the-badge&label=version)](#)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.3-7952b3?style=for-the-badge)](#)
-[![A11y](https://img.shields.io/badge/A11y-AA-22c55e?style=for-the-badge)](#)
-[![License](https://img.shields.io/badge/MIT-111827?style=for-the-badge)](#license)
+[![Trạng thái](https://img.shields.io/badge/status-ONLINE-10b981?style=for-the-badge&logo=vercel&logoColor=white)](#)
+[![Phiên bản](https://img.shields.io/badge/version-1.1.7-0ea5e9?style=for-the-badge&logo=github)](#)
+[![Xây dựng bằng](https://img.shields.io/badge/Bootstrap-5.3.3-7952b3?style=for-the-badge&logo=bootstrap)](#)
+[![Giấy phép](https://img.shields.io/badge/license-MIT-111827?style=for-the-badge)](#license)
+[![Made for Students](https://img.shields.io/badge/for-students-2563eb?style=for-the-badge&logo=graduation-cap)](#)
 
-*Neon glass • micro-interactions • dark-by-design • zero-backend*
+⚡ *Landing page tải ứng dụng LichSV với thiết kế neon-glass, hiệu ứng chuyển động và phong cách robot tương lai.* ⚡
 
 </div>
 
 ---
 
-## 🧬 DNA
-**LichSV** là landing page tải app lịch học cho sinh viên Việt Nam, thiết kế theo ngôn ngữ **neon-glass** và **robotic motion**.  
-Tập trung: **nhanh**, **mượt**, **tương lai** — chạy thuần HTML/CSS/JS + CDN.
+# 🧬 Giới thiệu
 
-> **Motion-first**: hover nâng bề mặt (elevation), chip version phát sáng, toggle dark/light mượt 120ms, tooltip mềm 180ms.
+**LichSV** không chỉ là một landing page thông thường. Nó được thiết kế để:  
 
----
-
-## ⚙️ Tính năng (Core Systems)
-
-- 🔎 **Instant Search**: lọc theo tên/ký hiệu (ICTU, FTU…) với debounce 120ms  
-- 🌗 **Dark Engine**: auto theo `prefers-color-scheme` + toggle, nhớ LocalStorage  
-- 🧊 **Glass UI**: blur 10px + viền mờ + shadow động (easing cubic-bezier)  
-- 🧭 **Quick Actions**: Android / iOS / LMS / Telegram / Facebook  
-- 🧰 **Resilient Logos**: lazy-load, tooltip, *graceful* khi lỗi ảnh  
-- ♿ **Accessible**: aria-labels, focus ring, key nav thân thiện
+- Hiện đại, sống động với **glassmorphism** và **gradient neon**  
+- Có **chuyển động dạng robot**: hover bay lên, chip phát sáng, tooltip mượt  
+- Hỗ trợ **dark mode tự động**  
+- Chạy **siêu nhanh** (thuần HTML/CSS/JS, không backend)  
+- Tối ưu cho **sinh viên**: tải app, tìm trường, tham gia cộng đồng  
 
 ---
 
-## 🚀 60s Quick-Start
+# ✨ Tính năng nổi bật
 
-```sh
-# Clone
-git clone https://github.com/<your-org>/lichsv-landing.git
-cd lichsv-landing
+## 🔎 Tìm kiếm tức thì
+- Nhập ký hiệu hoặc tên trường (ví dụ: `ICTU`, `FTU`)  
+- Lọc kết quả **theo thời gian thực**  
+- Badge hiển thị số trường khớp  
 
-# Dev preview (1 trong 2)
-python -m http.server 8080
-# hoặc VS Code → Live Server
+## 🌗 Dark Mode
+- Tự động nhận diện theme hệ thống  
+- Nút toggle với icon moon/sun đổi mượt  
+- Lưu trạng thái trong `localStorage`  
 
-# Open
-# http://localhost:8080
+## 🧊 Giao diện Glass + Neon
+- Nền gradient + blob động  
+- Card có hiệu ứng **mờ ảo** (blur 10px)  
+- Viền bo mềm 18px, shadow nổi  
+
+## 🧭 Liên kết nhanh
+- **Android**: tải `.apk` trực tiếp  
+- **iOS**: App Store  
+- **Cộng đồng**: Telegram, Facebook Group, LMS ICTU  
+
+## ⚡ Hiệu ứng Robot
+- Hover → card bay lên `translateY(-2px)`  
+- Tooltip xuất hiện êm ái  
+- Nút nhấn → rung nhẹ, phát sáng như LED  
+
+---
+
+# 🎥 Motion Spec (Mô tả chuyển động)
+
+```css
+/* Hover card */
+.logo-item:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 8px 18px rgba(2,8,23,.25);
+  transition: all .18s cubic-bezier(.4,.0,.2,1);
+}
+
+/* Nút toggle dark mode */
+.mode-btn {
+  transition: background .12s ease, transform .12s ease;
+}
+.mode-btn:active {
+  transform: scale(.95);
+}
